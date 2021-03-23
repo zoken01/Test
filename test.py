@@ -10,25 +10,25 @@ import plotly.graph_objects as go
 my_bar = st.progress(0)
 status_text = st.empty()
 
-# with st.spinner(text="asdsa"):
-#   for percent_complete in range(100):
-#       time.sleep(0.01)
+with st.spinner(text="asdsa"):
+  for percent_complete in range(100):
+      time.sleep(0.01)
 
-#       my_bar.progress(percent_complete + 1)
+      my_bar.progress(percent_complete + 1)
 
         
 
-#       status_text.text(f"{percent_complete+1}%")
-# st.success('Done!')
+      status_text.text(f"{percent_complete+1}%")
+st.success('Done!')
 
-# latest_iteration = st.empty()
-# bar = st.progress(0)
+latest_iteration = st.empty()
+bar = st.progress(0)
 
-# for i in range(100):
-#   # Update the progress bar with each iteration.
-#   latest_iteration.text(f'Iteration {i+1}')
-#   bar.progress(i + 1)
-#   time.sleep(0.01)
+for i in range(100):
+  # Update the progress bar with each iteration.
+  latest_iteration.text(f'Iteration {i+1}')
+  bar.progress(i + 1)
+  time.sleep(0.01)
 
 
 
